@@ -1,0 +1,47 @@
+﻿Pseudo Code
+On how to play Go Fish
+Rules
+Go Fish works using a simple deck of 52 cards. Each player has a hand, usually of five or seven cards. Each player takes turns, each turn asking if another player has a card or cards with a certain face value. If not, the asking player has to take another card. If the other player has the requested card, they must give all cards of that face value to the other player. If you have all four cards of a certain value, you may lay them down in a stack, face-up, which is called a book. Once all card values have been turned into books, the player with the most books wins.
+
+
+Pseudo Code
+* Load deck of 52 cards
+* Load hand 1 // Player 1 hand)
+* Set hand 1 card amount to 5
+* Load hand 2 //Player 2 or CPU hand
+* Set hand 2 card amount to 5
+* Set control to player 1
+* Loop until all card types create a “b” value
+   * Console out “Books:” - all values of “b”
+   * If control to player 1
+      * Console out player 1 cards
+      * Console out “Player 1: do you have any….”
+      * Console in “a”
+      * If “a” not = (1-10) or (aces, kings, queens, jokers)
+         * Console out “Invalid request. Do you have any…”
+      * else 
+         * If deck 2 has card(s) = “a”
+            * Give matching cards to deck 1
+         * Else
+            * Console out “Player 2: Go Fish!”
+            * Give all card(s) “a” (value = random, cannot match book “b”) to player 1
+            * Remove 1 card from deck
+   * Else if control to player 2
+      * CPU picks value of “z”
+            * If player 1 has not card “z” requested last turn
+               * Can not ask again for # of turns = 2
+                  * Cancel if player 1 draws from deck
+            * If player 1 has card(s) “z”
+               * Give matching card(s) “a” to player 2
+            * Else
+               * Console out: “Player 1: Go Fish!”
+               * Give all card(s) “z” (value = random, cannot match book “b”) to player 1
+               * Remove 1 card from deck
+   * If card(s) “a” or “z” have four of the same value
+      * Create book “b”
+         * Give book to player 1 if “a”
+         * Give book to player 2 if “z”
+* If player 1 has more books “b” than player 2
+   * Console out “Player 1 wins!”
+* Else if player 2 has more books “b” than player 1
+   * Console out “CPU wins!”
