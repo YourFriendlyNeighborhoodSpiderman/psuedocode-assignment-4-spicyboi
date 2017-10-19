@@ -5,28 +5,39 @@ Go Fish works using a simple deck of 52 cards. Each player has a hand, usually o
 
 
 Pseudo Code
-* Create deck
-* Set two players
-* Distribute 5 cards from deck to both players
-* On player 1’s turn
-   * Player 1 asks “Player 2, do you have any…”
-      * Insert the value of a card after that //Example: An ace, 10s, 4s…
-   * If Player 2 lacks the requested card(s)...
-      * Player 2 says “Go Fish” 
-      * Player 1 has to draw a card from the deck
-   * If Player 2 has requested card(s)...
-      * Player 2 gives all requested card(s) to Player 1
-      * Player 1 may ask again //This means player 1 can ask over and over until you have to Go Fish!
-* On player 2’s turn
-   * Player 2 asks “Player 1, do you have any…”
-      * Insert the value of a card after that //Example: An ace, 10s, 4s…
-   * If Player 2 lacks the requested card(s)...
-      * Player 1 says “Go Fish” 
-      * Player 2 has to draw a card from the deck
-   * If Player 2 has requested card(s)...
-      * Player 1 gives all requested card(s) to Player 1
-      * Player 2 may ask again 
-* If any player holds 4 of the same card…
-   * That card is put down as a book, and that card value is essentially removed from the game.
-* If all books have been created…
-   * The player with the most cards wins
+* Create deck;
+* Set two players;
+* Distribute 5 cards from deck to both players;
+* On player 1’s turn; {
+   * Player 1 asks “Player 2, do you have any…”; {
+      * Insert the value of a card after that; //Example: An ace, 10s, 4s…
+      }
+   * If Player 2 lacks the requested card(s); {
+      * Player 2 says “Go Fish” ;
+      * Player 1 has to draw a card from the deck;
+      }
+   * Else if Player 2 has requested card(s); {
+      * Player 2 gives all requested card(s) to Player 1;
+      * Player 1 may ask again; //This means player 1 can ask over and over until you have to Go Fish!
+      }
+      }
+* On player 2’s turn; {
+   * Player 2 asks “Player 1, do you have any…”; {
+      * Insert the value of a card after that;
+      }
+   * If Player 2 lacks the requested card(s); {
+      * Player 1 says “Go Fish”;
+      * Player 2 has to draw a card from the deck;
+      }
+   * If Player 2 has requested card(s); {
+      * Player 1 gives all requested card(s) to Player 1;
+      * Player 2 may ask again;
+      }
+      }
+* If any player holds 4 of the same card; {
+   * That card is put down as a book, and that card value is essentially removed from the game;
+   }
+* If all books have been created; {
+   * The player with the most cards wins;
+   }
+* Game ends;
