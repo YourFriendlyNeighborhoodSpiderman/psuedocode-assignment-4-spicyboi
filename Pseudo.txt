@@ -3,7 +3,7 @@ On how to play Go Fish
 Rules
 Go Fish works using a simple deck of 52 cards. Each player has a hand, usually of five or seven cards. Each player takes turns, each turn asking if another player has a card or cards with a certain face value. If not, the asking player has to take another card. If the other player has the requested card, they must give all cards of that face value to the other player. If you have all four cards of a certain value, you may lay them down in a stack, face-up, which is called a book. Once all card values have been turned into books, the player with the most books wins.
 
-
+// I think it is possible you could put in multiple players and have more than two 
 Pseudo Code
 * Create deck
 * Set two players
@@ -35,7 +35,8 @@ Pseudo Code
       * Player 2 may ask again
 * If any player holds 4 of the same card:
    * That card is put down as a book, and that card value is essentially removed from the game
+   // You could have a set a value for each number and after all the circumstances have been met that number will not longer be called upon
 * If all books have been created:
-   * The player with the most cards wins
+   * The player with the most sets of cards wins
 * Game ends
 
